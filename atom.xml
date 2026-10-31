@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://yyyuuuzzzuuu.pages.dev/</id>
+  <title type="text">YYYUUUZZZUUU</title>
+  <subtitle type="text">Blog</subtitle>
+  <updated>2026-10-31T00:00:00.000Z</updated>
+  <author><name>YYYUUUZZZUUU</name></author>
+  <link rel="alternate" href="https://yyyuuuzzzuuu.pages.dev/"/>
+  <link rel="self" href="https://yyyuuuzzzuuu.pages.dev/atom.xml"/>
+  <generator uri="https://github.com/CuteLeaf/Firefly">Firefly v6.16.8</generator>
+    <entry>
+      <id>https://yyyuuuzzzuuu.pages.dev/posts/i-love-huo/</id>
+      <title type="text">To my heat ~ 霍</title>
+      <published>2026-10-31T00:00:00.000Z</published>
+      <updated>2026-10-31T00:00:00.000Z</updated>
+      <author><name>YYYUUUZZZUUU</name></author>
+      <link rel="alternate" href="https://yyyuuuzzzuuu.pages.dev/posts/i-love-huo/"/>
+      <summary type="text">我就是喜欢霍霍好吧</summary>
+      <content type="html"><![CDATA[本文已加密保护，请访问网站查看。]]></content>
+    </entry>
+    <entry>
+      <id>https://yyyuuuzzzuuu.pages.dev/posts/gdscript_guide/</id>
+      <title type="text">浅入深出 GDScript</title>
+      <published>2026-10-23T00:00:00.000Z</published>
+      <updated>2026-10-23T00:00:00.000Z</updated>
+      <author><name>YYYUUUZZZUUU</name></author>
+      <link rel="alternate" href="https://yyyuuuzzzuuu.pages.dev/posts/gdscript_guide/"/>
+      <summary type="text">一个简明的 GDScript 教程</summary>
+      <content type="html"><![CDATA[<div><div><div></div><div>提示</div></div><div><p>GDScript 是 Godot 引擎专用语言，泛用性低。</p><p>完整的 GDScript 体验需要涉及 Godot 引擎知识，这里不做概述。</p><p>该文章内容源于官方文档和个人经验总结，会有遗漏或错误的地方。</p></div></div>
+<section><h1>什么是 GDScript ？<a href="#什么是-gdscript-"><span>#</span></a></h1><p>GDScript 是 <strong>Godot</strong> 游戏引擎的专用语言，类似 Python ，旨为用更少的代码实现游戏，他与 Godot 引擎契合度极高。<br />
+不过，Godot 引擎还支持 <strong>C#</strong> 语言，那么对于是选择 GDScript 还是 C# ，我的答案是：<br />
+如果你是<strong>小白</strong>，请选择 <strong>GDScript</strong><br />
+如果你的代码<strong>经常调用引擎、编辑器相关内容</strong>，请选择 <strong>GDScript</strong><br />
+如果你的代码涉及<strong>大量计算内容</strong>，请选择 <strong>C#</strong></p></section>
+<section><h1>GDScript 示例<a href="#gdscript-示例"><span>#</span></a></h1><section><h2>变量<a href="#变量"><span>#</span></a></h2><p>变量使用 <code>var</code> 声明，如：</p><div><figure><figcaption></figcaption><pre><code><div><div><div>1</div></div><div><span>var</span><span> </span><span>a</span></div></div><div><div><div>2</div></div><div><span>var</span><span> </span><span>b</span><span><span> </span><span>=</span><span> </span></span><span>1</span></div></div><div><div><div>3</div></div><div><span>var</span><span> </span><span>c</span><span><span> </span><span>=</span><span> </span></span><span>true</span></div></div><div><div><div>4</div></div><div><span>var</span><span> </span><span>d</span><span><span> </span><span>=</span><span> </span></span><span>Vector2</span><span>(</span><span>1</span><span>, </span><span>0</span><span>)</span></div></div></code></pre><div><div></div><div></div></div></figure></div><p>可在变量名后用<code>: 类型</code>，或<code>:=</code>，来声明类型，如：</p><div><figure><figcaption></figcaption><pre><code><div><div><div>1</div></div><div><span>var</span><span> </span><span>a</span><span>: </span><span>int</span></div></div><div><div><div>2</div></div><div><span>var</span><span> </span><span>b</span><span>: </span><span>float</span><span><span> </span><span>=</span><span> </span></span><span>2.0</span></div></div><div><div><div>3</div></div><div>
+</div></div><div><div><div>4</div></div><div><span># 同 var c: bool = true</span></div></div><div><div><div>5</div></div><div><span>var</span><span> </span><span>c</span><span><span>:=</span><span> </span></span><span>true</span></div></div></code></pre><div><div></div><div></div></div></figure></div><p>注意，使用<code>:=</code>时，比如赋值。<br />
+声明类型可以带来<strong>编辑器补全</strong>以及<strong>运行时的性能提升</strong>，所以建议养成声明类型的习惯。</p><p>可在<code>var</code>前用<code>@...</code>字段进行一些编辑器相关内容，如：</p><div><figure><figcaption></figcaption><pre><code><div><div><div>1</div></div><div><span># 把整数 a 导出到编辑器，后续可直接在编辑器内调整 a 的值</span></div></div><div><div><div>2</div></div><div><span>@export</span><span> </span><span>var</span><span> </span><span>a</span><span>: </span><span>int</span><span><span> </span><span>=</span><span> </span></span><span>1</span></div></div><div><div><div>3</div></div><div>
+</div></div><div><div><div>4</div></div><div><span># 把小数 b 导出到编辑器，有一个滑块，最小为 A ，最大为 B，步长为 C</span></div></div><div><div><div>5</div></div><div><span>@export_range</span><span>(</span><span>A</span><span>, </span><span>B</span><span>, </span><span>C</span><span>) </span><span>var</span><span> </span><span>b</span><span>: </span><span>float</span><span><span> </span><span>=</span><span> </span></span><span>1.0</span></div></div><div><div><div>6</div></div><div>
+</div></div><div><div><div>7</div></div><div><span>......</span></div></div></code></pre><div><div></div><div></div></div></figure></div><p>灵活使用<code>@...</code>字段可大幅度提升效率，且可以完成一些骚操作<br />
+比如我有一个实例场景，假如是敌人，他在主场景内，他需要跟踪主场景内的玩家场景，只用脚本获取玩家场景很难，但这时只要在敌人的脚本里</p><div><figure><figcaption></figcaption><pre><code><div><div><div>1</div></div><div><span>@export</span><span> </span><span>var</span><span> </span><span>player</span><span>: </span><span>CharacterBody3D</span></div></div></code></pre><div><div></div><div></div></div></figure></div><p>这时在编辑器里点击，就可以选择玩家场景了，非常方便。</p></section></section>]]></content>
+    </entry>
+</feed>

@@ -1,0 +1,18 @@
+﻿# YYYUUUZZZUUU
+> YYYUUUZZZUUU Blog 是一款基于 Astro 框架和 Fuwari 模板开发的清新美观且现代化个人博客。
+
+## Key Pages
+- [主页](https://yyyuuuzzzuuu.pages.dev/)
+- [归档](https://yyyuuuzzzuuu.pages.dev/archive/)
+- [关于我](https://yyyuuuzzzuuu.pages.dev/about/)
+- [友链](https://yyyuuuzzzuuu.pages.dev/friends/): 这里是我的朋友们，欢迎互相访问交流
+- [留言](https://yyyuuuzzzuuu.pages.dev/guestbook/): 欢迎在这里留下你的足迹，分享你的想法和建议
+- [动态](https://yyyuuuzzzuuu.pages.dev/dynamic/): 随手记下此刻的想法与日常。
+- [项目](https://yyyuuuzzzuuu.pages.dev/projects/): 这里展示我开发过的项目
+- [相册](https://yyyuuuzzzuuu.pages.dev/gallery/): 记录生活中的美好瞬间
+- [书签导航](https://yyyuuuzzzuuu.pages.dev/booknav/): 收藏一些好用的网站，按分类整理
+- [打赏](https://yyyuuuzzzuuu.pages.dev/sponsor/): 如果我的内容对你有帮助，欢迎通过以下方式打赏我，你的支持是我持续创作的动力！
+
+## Recent Posts
+- [To my heat ~ 霍](https://yyyuuuzzzuuu.pages.dev/posts/i-love-huo/): 我就是喜欢霍霍好吧
+- [浅入深出 GDScript](https://yyyuuuzzzuuu.pages.dev/posts/gdscript_guide/): 一个简明的 GDScript 教程
